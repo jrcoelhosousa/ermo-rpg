@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap");
+
+$serif: "Source Serif 4", Georgia, serif;
+$sans: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+.main-content {
+  font-family: $serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+
+  p, ul, ol, blockquote { max-width: 68ch; }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $sans;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-size: 2rem; line-height: 1.2; }
+
+  h2 {
+    margin-top: 2.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid $border-color;
+    font-size: 1.375rem;
+  }
+
+  h3 { margin-top: 1.75rem; font-size: 1.0625rem; text-transform: none; }
+}
+
+.main-content blockquote {
+  margin: 1.5rem 0;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 3px solid $link-color;
+  color: #b9b5a8;
+  font-style: normal;
+}
+
+.main-content table {
+  display: table;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-family: $sans;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.45;
+  box-shadow: none;
+  border: 1px solid $border-color;
+
+  th {
+    font-weight: 600;
+    background-color: #23261f;
+    border-bottom: 1px solid $border-color;
+  }
+
+  th, td { padding: 0.5rem 0.75rem; }
+
+  tbody tr + tr { border-top: 1px solid rgba(54, 58, 52, 0.6); }
+}
+
+.site-title, .site-nav, .search-input, .breadcrumb-nav, .site-footer {
+  font-family: $sans;
+}
+
+.site-title { font-weight: 700; letter-spacing: 0.02em; }
+
+@media print {
+  .side-bar, .main-header, .breadcrumb-nav, .site-footer,
+  #edit-this-page, .back-to-top { display: none !important; }
+
+  .main { margin-left: 0; max-width: 100%; }
+  .main-content { font-size: 10.5pt; color: #000; }
+  .main-content table { page-break-inside: avoid; }
+}
