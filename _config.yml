@@ -1,0 +1,62 @@
+title: ERMO
+description: Livro de regras completo do ERMO, um jogo de fantasia medieval sobre o que se perde no caminho.
+lang: pt-BR
+encoding: UTF-8
+
+# Troque pelo seu domínio quando ele estiver apontado.
+url: https://ermo.com.br
+
+permalink: pretty
+remote_theme: just-the-docs/just-the-docs
+color_scheme: escuro
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - ferramentas/
+  - livro-fonte.md
+  - README.md
+  - vendor/
+
+# Busca no cliente, sem servidor. É o que faz um SRD ser usável.
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+heading_anchors: true
+
+back_to_top: true
+back_to_top_text: "Voltar ao topo"
+
+footer_content: 'Texto de ERMO por <strong>SEU NOME</strong>, sob licença <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br">CC BY-SA 4.0</a>. Fonte no <a href="https://github.com/SEU-USUARIO/ermo">GitHub</a>.'
+
+last_edit_timestamp: true
+last_edit_time_format: "%d/%m/%Y"
+
+aux_links:
+  "Fonte no GitHub":
+    - "https://github.com/SEU-USUARIO/ermo"
+aux_links_new_tab: true
+
+# "Editar esta página" no rodapé: transforma leitor em revisor.
+gh_edit_link: true
+gh_edit_link_text: "Sugerir uma correção nesta página"
+gh_edit_repository: "https://github.com/SEU-USUARIO/ermo"
+gh_edit_branch: "main"
+gh_edit_view_mode: "edit"
+
+callouts:
+  nota:
+    title: Nota
+    color: grey-dk
