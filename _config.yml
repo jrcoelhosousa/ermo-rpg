@@ -3,15 +3,11 @@ description: Livro de regras completo do ERMO, um jogo de fantasia medieval sobr
 lang: pt-BR
 encoding: UTF-8
 
-# Troque pelo seu domínio quando ele estiver apontado.
-url: https://ermo.com.br
-
 permalink: pretty
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 color_scheme: escuro
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-redirect-from
 
